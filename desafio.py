@@ -34,7 +34,7 @@ while True:
 
         elif valor > 0:
             saldo -= valor
-            extrato += f"Saque: R$ {valor:.2f}\n"
+            extrato += f"Saque: R$ {valor:.2f}. Data/Hora: {datetime.now()}\n"
             if datetime.now() - data >= timedelta(days=1):
                 data = datetime.now()
                 saques = 0
